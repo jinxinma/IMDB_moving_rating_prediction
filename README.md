@@ -15,7 +15,7 @@ There are several scripts in this repository:
  * `movie_metadata.csv.zip`: raw data
   
 ### 2. Tools Used
-Please make sure you have  **Pandas**, **Seaborn**, **Scikit learn**, **Keras**, and **XGBoost** installed. The command would usually be `pip install package_name`.
+Please make sure you have  **Pandas**, **Seaborn**, **Scikit learn**, **Keras**, and **XGBoost** installed. The command is `pip install package_name`.
 
 * `Data Preprocessing`: **Pandas** + **Scikit learn**. Pandas has various built-in functions that can readily preprocesses data and produces insights. Scikit learn has a Pipeline class which allows for automating the data wrangling process. When using these tools together, data preprocessing becomes much more efficient. Note that users can also define their own classes for data preprocessing in Scikit learn. The class needs to have a **fit** method and a **tranform** method in order to be used in the pipeline. I defined my own class to subset features and select most important features. I also borrowed a **CategoricalEncoder**  class implemented by Scikit learn's author to one-hot-encode the categorical features in the pipeline. The **CategoricalEncoder** class will be implemented in Scikit learn's future versions
 * `Data Visualization`: **Pandas**, **Seaborn**, and **matplotlib**. The plotting functions of Pandas and Seaborn are essentially build on top of matplotlib. Pandas incorporating plotting functions into its dataframe. Seaborn improves aesthetics upon matplotlib. For this project, I chose to use static plots as they are sufficient to derive insights from the data. **Plotly** is a good option to create interactive plots when necessary
